@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title></title>
     <!-- Website Icon  -->
     <link rel="Icon" href="image/">
 
@@ -25,23 +25,116 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Slick slider Css  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" /> -->
+
+    <!-- Fonts Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
 <body>
 
-    <!-- Footer Section Start -->
+    <!-- Header Section Start -->
     <header id="header">
-
     </header>
-    <!-- Footer Section End -->
+    <!-- Header Section End -->
+
+    <!-- Main Section Start -->
+    <main>
+
+        <!-- Hero Banner Section Start -->
+        <div class="hero hero-home">
+            <div class="hh-box">
+                <video src="image/banner-1.mp4" class="w-100" autoplay muted loop></video>
+                <div class="hhb">
+                    <div class="container-xxl">
+                        <div class="hhb-text">
+                            <h1>Your Gateway between Europe & India</h1>
+                            <p class="mb-4">Importer & Exporter of various commodities between Europe & Asia</p>
+                            <a href="#" class="th-btn th-btn-2">contact us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Banner Section End -->
+
+
+        <!-- ENVIRONMENTAL Section Start -->
+        <section class="enviromental">
+            <div class="container-xxl">
+                <div class="enviromental-box">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="eb-box d-flex gap-3">
+                                <div class="eb-img"><img src="image/eb-img.png" alt=""></div>
+                                <div class="eb-text">
+                                    <h3>ENVIRONMENTAL</h3>
+                                    <p>Importer & Exporter of various commodities between Europe & Asia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="eb-box d-flex gap-3">
+                                <div class="eb-img"><img src="image/eb-img.png" alt=""></div>
+                                <div class="eb-text">
+                                    <h3>ENVIRONMENTAL</h3>
+                                    <p>Importer & Exporter of various commodities between Europe & Asia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="eb-box d-flex gap-3">
+                                <div class="eb-img"><img src="image/eb-img.png" alt=""></div>
+                                <div class="eb-text">
+                                    <h3>ENVIRONMENTAL</h3>
+                                    <p>Importer & Exporter of various commodities between Europe & Asia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ENVIRONMENTAL Section End -->
+
+        <!-- About Us Section Start -->
+        <section class="about-us">
+            <div class="container-xxl">
+              <div class="row justify-content-center">
+                <div class="col-11">  <div class="row">
+                    <div class="col-3 pt-4">
+                        <h1>ABOUT US</h1>
+                    </div>
+                    <div class="col-5 pt-4">
+                        <p class="mb-4">Our company is based out of Warsaw, Poland and is mainly involved in the purchase and trade of different types of Ferrous scrap products for exporting to Asian markets since 2020. We are continuously collaborating with various companies in Europe such as Germany, Netherlands, Italy, Poland, UK, Denmark, Bulgaria, etc</p>
+                        <a href="" class="th-btn th-btn-2">know more</a>
+                    </div>
+                    <div class="col-4"><img src="image/about-cra.png" class="w-100" alt=""></div>
+                </div></div>
+                <div class="col-12">
+                    <div class="au-bottom-img">
+                    <img src="image/about-scrap.png" class="w-100" alt="">
+                </div>
+            </div>
+              </div>
+            </div>
+        </section>
+        <!-- About Us Section End -->
 
 
 
 
 
+
+    </main>
+    <!-- Main Section End -->
 
 
 
@@ -62,11 +155,24 @@
     <!-- ========== AOS Js ========== -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!-- Slick Js  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- ========== main Js ========== -->
     <script src="js/main.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".hh-banner", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
