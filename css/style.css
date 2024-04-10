@@ -234,8 +234,245 @@ a {
 
 /* ------------- Enviromental End ------------- */
 /* 05. About Us Scetion Start ------------------------------ */
-.au-bottom-img{
+.au-bottom-img {
     position: relative;
     top: -200px;
 }
+
 /* ------------- About Us End ------------- */
+/* 06. We Do Scetion Start ------------------------------ */
+.we-do {
+    padding: 60px 0px;
+}
+
+/* .we-do h1{
+  color: var(--th-c-1) !important;
+} */
+
+.wd-box {
+    position: relative;
+}
+
+.wd-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: all .4s;
+    padding: 20px;
+}
+
+
+.wd-text h3 {
+    font-size: var(--th-fs-2);
+    color: var(--th-c-3);
+    position: relative;
+    z-index: 10;
+    user-select: none;
+}
+
+.wd-text p {
+    margin: 50px 0px;
+    font-size: var(--th-fs-3);
+    color: var(--th-c-3);
+    position: relative;
+    z-index: 10;
+    user-select: none;
+}
+
+.wd-text .th-btn {
+    position: relative;
+    z-index: 10;
+}
+
+.wd-text::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 79, 81, 0.92);
+    transform-origin: left bottom;
+    transform: scale(0, 0);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: all .2s;
+}
+
+.wd-box:hover .wd-text::before {
+    transform: scale(1, 1);
+}
+
+.wd-box:hover .wd-text {
+    opacity: 1;
+}
+
+/* ------------- We Do End ------------- */
+
+/* 07. Contribut To A Scetion Start ------------------------------ */
+.contribut-to {
+    padding: 100px 0px;
+    background: url(../image/contribut-to.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ct-box {
+    padding: 70px 0px;
+    background: rgba(255, 255, 255, 0.40);
+    backdrop-filter: blur(31.25px);
+}
+
+.ctb {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: var(--th-c-5);
+}
+
+.ctb h4,
+.ctb p {
+    color: var(--th-c-5);
+}
+
+.ctb-h h4 {
+    text-transform: uppercase;
+    color: var(--th-c-5);
+}
+
+.ctb-h h1 {
+    text-transform: uppercase;
+    color: var(--th-c-1);
+    font-size: calc(var(--th-fs-1)*2);
+}
+
+/* ------------- Contribut To A End ------------- */
+/* 08. Work with us Scetion Start ------------------------------ */
+.work-with-us {
+    padding: 80px 0px;
+}
+
+.wwu-box {
+    max-width: 80%;
+    display: flex;
+    gap: 20px;
+    margin: 20px 0px;
+}
+
+.wwu-y-box {
+    width: 10px;
+    height: 100%;
+    background-color: var(--th-c-2);
+}
+
+.wwu-right {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wwu-right h3 {
+    text-transform: uppercase;
+    line-height: 160%;
+    /* 28.8px */
+    letter-spacing: 1.26px;
+}
+
+.wwu-right p {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+
+/* ------------- Work with us End ------------- */
+/* 09. Events and Updates Scetion Start ------------------------------ */
+.event {
+    background-color: var(--th-c-1);
+    padding: 80px 0;
+}
+
+.event .e-heah h1 {
+    color: var(--th-c-5);
+    text-transform: uppercase;
+    line-height: 150%;
+}
+
+.event .e-heah h1 .and {
+    color: var(--th-c-2);
+}
+
+.event .e-heah p {
+    color: var(--th-c-3);
+}
+
+.eb-tab {
+    background: #006466;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.eb-tab.active .ebt-h p {
+    color: var(--th-c-2);
+}
+
+.ebt-h {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.ebt-h p {
+    color: var(--th-c-5);
+    margin: 0;
+    transition: all .5s;
+}
+
+.ebt-h .ebt-h-icon .fal {
+    color: var(--th-c-2);
+    font-size: var(--th-fs-3);
+}
+
+.ebt-body {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.ebt-body p {
+    color: var(--th-c-5);
+}
+
+.ebt-body a {
+    color: var(--th-c-2);
+    text-decoration: underline;
+}
+.eb-right{
+    position: relative;
+}
+.ebs-bo {
+    padding: 15px 10px;
+    background: rgba(0, 79, 81, 0.41);
+    backdrop-filter: blur(11px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.ebs-bo p{
+   color: var(--th-c-5);
+}
+.ebs-bo .far{
+   color: var(--th-c-2);
+   font-size: var(--th-fs-3);
+   cursor: pointer;
+}
+
+/* ------------- Events and Updates End ------------- */
