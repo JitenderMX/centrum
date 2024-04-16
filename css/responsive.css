@@ -32,11 +32,17 @@
 
 @media screen and (max-width: 768px) {
     :root {
-        --th-fs-1: calc(40px*0.75);
+        --th-fs-1: calc(40px*0.7);
         --th-fs-4: calc(32px*0.75);
         --th-fs-2: calc(24px*0.8);
         --th-fs-3: calc(18px*0.9);
     }
+    h1 {
+        letter-spacing: 4px;
+    }
+    .enviromental-box {
+        transform: translate(0,0%);
+      }
 }
 
 
