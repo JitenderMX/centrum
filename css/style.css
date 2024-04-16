@@ -71,33 +71,53 @@ a {
   font-size: var(--th-fs-3);
   color: #fff;
   font-family: var(--th-font-1);
-  font-size: 18px;
+  font-size: var(--th-fs-3);
+  border: 2px solid transparent;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  display: inline-block;
   letter-spacing: 0.9px;
   text-align: center;
+  transition: all .5s;
 }
 
 .th-btn-1 {
-  border: 1px solid var(--th-c-5);
+  border: 2px solid var(--th-c-5);
   font-weight: 300;
   background-color: transparent;
   color: var(--th-c-5);
 }
 
+.th-btn-1:hover {
+  background-color: var(--th-c-1);
+  border: 2px solid var(--th-c-1);
+}
+
 .th-btn-2 {
-  background-color: var(--th-c-2);
+  background-color: #ffc333;
   color: var(--th-c-1);
 }
 
+.th-btn-2:hover {
+  background-color: var(--th-c-2);
+  border: 2px solid #b37e00;
+}
+
 .th-btn-3 {
-  background-color: var(--th-c-1);
+  background-color: #337274;
   color: var(--th-c-2);
 }
 
-/* Scroll Bar style start */
+.th-btn-3:hover {
+  background-color: var(--th-c-1);
+  border: 2px solid #002f31;
+}
+
+/* 
+Scroll Bar style start
+*/
 
 ::-webkit-scrollbar {
   /* width */
@@ -114,7 +134,17 @@ a {
   border-radius: 20px;
 }
 
+.row {
+  padding: 0px !important;
+}
+
 /* Scroll Bar style Section End */
+
+#product-page main,
+#contact-page main,
+#product-sub-page main {
+  margin-top: 90px;
+}
 
 /* ------------- base Section End ------------- */
 
@@ -133,7 +163,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0px;
+  padding: 15px;
 }
 
 .header ul {
@@ -156,11 +186,22 @@ a {
   color: var(--th-c-5);
   letter-spacing: 1px;
 }
-#about-page .header a {
+
+#about-page .header a,
+#contact-page .header a,
+#product-sub-page .header a {
   color: var(--th-c-1);
 }
-#about-page .header a.th-btn {
+
+#about-page .header a.th-btn,
+#contact-page .header a.th-btn,
+#product-sub-page .header a.th-btn {
   border: 1px solid var(--th-c-1);
+}
+#about-page .header a.th-btn:hover,
+#contact-page .header a.th-btn:hover,
+#product-sub-page .header a.th-btn:hover {
+  color: var(--th-c-5);
 }
 
 .header menu a {
@@ -168,10 +209,119 @@ a {
   font-style: normal;
 }
 
-.header .nav-logo a {
+.nav-logo a {
   font-size: var(--th-fs-2);
   font-weight: 700;
   letter-spacing: 5.28px;
+}
+
+.nav-menu-btn .fal {
+  font-size: var(--th-fs-2);
+  border: 1px solid var(--th-c-5);
+  color: var(--th-c-5);
+  padding: 10px;
+  cursor: pointer;
+  transition: all .5S;
+}
+
+.nav-menu-btn .fal:hover {
+  background-color: var(--th-c-1);
+  border: 1px solid var(--th-c-1);
+}
+
+#about-page .nav-menu-btn .fal,
+#contact-page .nav-menu-btn .fal,
+#product-sub-page .nav-menu-btn .fal {
+  border: 1px solid var(--th-c-1);
+  color: var(--th-c-1);
+}
+
+#about-page .nav-menu-btn .fal:hover,
+#contact-page .nav-menu-btn .fal:hover,
+#product-sub-page .nav-menu-btn .fal:hover {
+  background-color: var(--th-c-1);
+  color: var(--th-c-5);
+}
+
+#mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--th-c-5);
+  width: 100%;
+  display: block;
+  transform: translateX(100%);
+  padding: 15px;
+  transition: all .5s;
+}
+
+#mobile-menu .nav-menu-btn .fal {
+  border: 1px solid var(--th-c-1);
+  color: var(--th-c-1);
+  padding: 10px;
+  cursor: pointer;
+  transition: all .5S;
+}
+
+#mobile-menu .nav-menu-btn .fal:hover {
+  border: 1px solid var(--th-c-1);
+  color: var(--th-c-1);
+  padding: 10px;
+  cursor: pointer;
+  transition: all .5S;
+}
+
+#mobile-menu .nav-menu-btn .fal:hover {
+  border: 1px solid var(--th-c-1);
+  color: var(--th-c-5);
+  padding: 10px;
+  cursor: pointer;
+  transition: all .5S;
+}
+
+#mobile-menu .nav-logo a {
+  font-size: var(--th-fs-2);
+  color: var(--th-c-1);
+  font-weight: 700;
+  letter-spacing: 5.28px;
+}
+
+#mobile-menu .th-btn.th-btn-1 {
+  border: 2px solid var(--th-c-1);
+}
+
+#mobile-menu .th-btn.th-btn-1:hover {
+  color: var(--th-c-5);
+  font-weight: 500;
+
+}
+
+#mobile-menu.active {
+  transform: translateX(0%);
+}
+
+#mobile-menu menu {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+#mobile-menu menu .menu-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  list-style-type: none;
+  gap: 20px;
+}
+
+#mobile-menu menu .menu-list a {
+  font-size: var(--th-fs-2);
+  color: var(--th-c-1);
 }
 
 /* -------------  Section Section  End ------------- */
@@ -181,7 +331,13 @@ a {
 .hh-box {
   height: 100vh;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
+}
+
+.hh-box video {
+  width: 100%;
+  min-width: 2000px;
+  margin: auto;
 }
 
 .hhb {
@@ -405,17 +561,17 @@ a {
   padding: 80px 0;
 }
 
-.event .e-heah h1 {
+.event .ev-heah h1 {
   color: var(--th-c-5);
   text-transform: uppercase;
   line-height: 150%;
 }
 
-.event .e-heah h1 .and {
+.event .ev-heah h1 .and {
   color: var(--th-c-2);
 }
 
-.event .e-heah p {
+.event .ev-heah p {
   color: var(--th-c-3);
 }
 
@@ -460,9 +616,11 @@ a {
   color: var(--th-c-2);
   text-decoration: underline;
 }
+
 .eb-right {
   position: relative;
 }
+
 .ebs-bo {
   padding: 15px 10px;
   background: rgba(0, 79, 81, 0.41);
@@ -472,9 +630,11 @@ a {
   left: 0;
   right: 0;
 }
+
 .ebs-bo p {
   color: var(--th-c-5);
 }
+
 .ebs-bo .far {
   color: var(--th-c-2);
   font-size: var(--th-fs-3);
@@ -488,50 +648,61 @@ a {
   background-color: #ebefe9;
   padding: 80px 0;
 }
+
 .foot-sec {
   max-width: 270px;
   height: 100%;
 }
+
 .foot-sec-1 h2 {
   letter-spacing: 5.28px;
   margin-bottom: 50px;
 }
+
 .foot-sec-2 h2,
-.foot-form h2 {
+.contact-form h2 {
   color: var(--th-c-4);
 }
+
 .footer ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .footer .fal {
   font-size: var(--th-fs-3);
   color: var(--th-c-1);
 }
+
 .footer a {
   font-size: var(--th-fs-3);
   color: var(--th-c-4);
   font-family: var(--th-font-1);
 }
-.footer input,
-.footer textarea {
-  width: calc(100% - 20px);
+
+.contact-form input,
+.contact-form textarea {
+  width: calc(100%);
   background-color: #fff8e8;
   padding: 10px;
   border-radius: 3px;
   border: none;
 }
-.footer button{
-    border: none;
-}
+
+/* .contact-form button {
+  border: none;
+} */
+
 .social-icon {
   margin-top: 160px;
 }
+
 .social-icon .fab {
   color: var(--th-c-1);
   font-size: var(--th-fs-3);
 }
+
 /* ------------- Footer Section End ------------- */
 
 /* About Us Page =============================================---------------- */
@@ -540,10 +711,12 @@ a {
 .management {
   padding: 80px 0px;
 }
+
 .m-box {
   position: relative;
   overflow: hidden;
 }
+
 .m-text {
   position: absolute;
   bottom: 0;
@@ -554,14 +727,17 @@ a {
   transform: translateY(100%);
   transition: all 0.5s;
 }
+
 .m-box:hover .m-text {
   transform: translateY(0%);
 }
+
 .m-text h2 {
   color: var(--th-c-1);
   font-size: var(--th-fs-4);
   letter-spacing: 3.2px;
 }
+
 .m-text span {
   color: var(--th-c-1);
   font-size: var(--th-fs-3);
@@ -569,13 +745,16 @@ a {
   font-family: var(--th-font-2);
   font-style: italic;
   font-weight: 400;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
+  /* 27px */
 }
+
 .m-text p {
   color: var(--th-c-1);
   margin-top: 26px;
   margin-bottom: 0;
 }
+
 /* ------------- Managament Section End ------------- */
 
 /* 12. Business Section Start ------------------------------ */
@@ -585,39 +764,46 @@ a {
   background-size: cover;
   padding: 40px 0px;
 }
+
 .b-box .wwu-box {
   background: rgba(255, 253, 246, 0.58);
   backdrop-filter: blur(15px);
   padding: 50px 20px;
   margin: 20px 0px;
 }
+
 /* ------------- Business Section End ------------- */
 
 /* 13. Scrap Form Section Start ------------------------------ */
 .scrap-from {
   padding: 80px 0px;
 }
+
 .sf-img,
 .sf-text {
   margin: 20px 0px;
 }
+
 /* ------------- Scrap Form Section End ------------- */
 
 /* 14. Places Section Start ------------------------------ */
 .places {
   padding: 80px 0px;
 }
+
 .p-point {
   display: flex;
   gap: 120px;
   margin-top: 120px;
   /* justify-content: space-between; */
 }
+
 .p-point ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 .p-point li {
   display: flex;
   align-items: center;
@@ -625,13 +811,16 @@ a {
   font-size: var(--th-fs-3);
   margin-bottom: 20px;
 }
+
 .p-point .fas {
   color: var(--th-c-2);
 }
+
 .p-point p {
   font-weight: 700;
   margin: 0;
 }
+
 /* ------------- Scrap Form Section End ------------- */
 
 /* 15. How Scrap is Economical Section Start ------------------------------ */
@@ -645,15 +834,18 @@ a {
   margin-right: auto;
   transition: all 0.5s;
 }
+
 .e-box:hover {
   background-color: #faedce;
   width: 90%;
   border-radius: 50px;
 }
+
 .e-text {
   display: flex;
   gap: 15px;
 }
+
 .e-text h2 {
   color: var(--th-c-1);
   font-weight: 700;
@@ -666,33 +858,158 @@ a {
 .unique-selling {
   padding: 80px 0px;
 }
+
 .us-box {
   padding: 40px 0px;
   background: url(../image/Unique-selling.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .us-card {
   padding: 30px;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(15px);
   text-align: center;
 }
+
 .us-card .usc-icon {
   max-width: 80px;
   width: 100%;
   margin: auto;
   margin-bottom: 10px;
 }
+
 .us-card .usc-text h2 {
-  color: var(--th-c-5) ;
+  color: var(--th-c-5);
   font-size: var(--th-fs-2);
   font-weight: 700;
-  line-height: 160%; /* 38.4px */
+  line-height: 160%;
+  /* 38.4px */
 }
+
 .us-card .usc-text p {
   color: var(--th-c-5);
   font-size: var(--th-fs-3);
-  line-height: 160%; /* 38.4px */
+  line-height: 160%;
+  /* 38.4px */
 }
+
 /* ------------- Unique Selling Section End ------------- */
+
+
+/* 17.Selling Channels Section Start ------------------------------ */
+.selling-channels {
+  padding-bottom: 80px;
+}
+
+.sct-btn {
+  padding: 30px 20px;
+  /* margin-bottom: 20px; */
+  background: #EBEFE9;
+  transition: all .5s;
+}
+
+.sct-btn:hover {
+  background: #FAEDCE;
+  border-radius: 50px;
+}
+
+/* -------------Selling Channels Section End ------------- */
+
+/* Contact Us Page =============================================---------------- */
+
+/* 18.Love to here Section Start ------------------------------ */
+.love-to-here {
+  background-color: var(--th-c-1);
+  padding-top: 80px;
+}
+
+.love-to-here h1,
+.love-to-here p {
+  color: var(--th-c-5);
+}
+
+.contact-form-map {
+  padding: 80px 0px;
+}
+
+.cfm-right iframe {
+  width: 100%;
+  height: 350px;
+}
+
+/* ------------- Love to here Section End ------------- */
+
+/* Product Page =============================================---------------- */
+#product-page {
+  background-color: var(--th-c-1);
+}
+
+/* 19.Our Product Section Start ------------------------------ */
+.our-product {
+
+  padding: 100px 0px;
+}
+
+.our-product h1 {
+  color: var(--th-c-5);
+}
+
+.our-product p {
+  color: var(--th-c-5);
+}
+
+.our-product .op-img {
+  color: var(--th-c-5);
+}
+
+.op-box {
+  background: #006466;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.op-box h2 {
+  text-transform: uppercase;
+  color: var(--th-c-5);
+  letter-spacing: 3px;
+  margin: 0 !important;
+}
+
+.op-box p {
+  color: #FFFDF6;
+  margin: 35px 0px;
+}
+
+.op-box .th-btn {
+  font-weight: 700;
+}
+
+/* ------------- Our Product Section End ------------- */
+
+/* Product Image Page =============================================---------------- */
+
+/* 20.Gallery Section Start ------------------------------ */
+.gallery {
+  padding: 100px 0px;
+}
+
+.gallery h2 {
+  font-weight: 700;
+  letter-spacing: 5.28px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.gallery .br-box a,
+.gallery .br-box p,
+.gallery .br-box .fal {
+  color: var(--th-c-1);
+}
+
+.gallery .br-box a:hover {
+  text-decoration: underline;
+}
+
+/* ------------- Gallery Section End ------------- */

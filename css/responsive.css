@@ -1,18 +1,47 @@
 /* Extra large devices (1200px and down) */
 
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1200px) {
+    .enviromental-box .row {
+        padding: 30px !important;
+      }
+      .enviromental-box .row .col-md-4:nth-child(2) .eb-box {
+        border-left: 0px solid var(--th-c-1);
+        border-right: 0px solid var(--th-c-1);
+      }
+}
 
 
 /* Large devices (992px and down) */
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    :root {
+        --th-fs-1: calc(40px*0.9);
+        --th-fs-4: calc(32px*0.9);
+        --th-fs-2: calc(24px*0.9);
+        --th-fs-3: calc(18px);
+    }
+    
+.eb-box {
+    padding: 10px;
+  }
+  
+}
 
 
 /* Medium devices (768px and down) */
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    :root {
+        --th-fs-1: calc(40px*0.75);
+        --th-fs-4: calc(32px*0.75);
+        --th-fs-2: calc(24px*0.8);
+        --th-fs-3: calc(18px*0.9);
+    }
+}
 
 
 /* Small devices (576px and down) */
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+
+}

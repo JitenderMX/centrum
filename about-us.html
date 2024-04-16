@@ -396,7 +396,33 @@
         <!-- UNIQUE SELLING PROpositions Section End -->
 
         <!-- SELLING CHANNELS Section Start -->
-        section.selling-channels>.container-xxl>
+        <section class="selling-channels">
+            <div class="container-xxl">
+                <div class="sec-heading">
+                    <h1>selling channels</h1>
+                </div>
+                <div class="sc-tab mt-4">
+                    <div class="row">
+                        <div class="col-sm-5 col-md-6 col-lg-7">
+                            <div class="sct-left d-flex flex-column justify-content-between h-100">
+                                <div class="sct-btn" data-img="image/sc-1.png">
+                                    <h3>Scrapyards</h3>
+                                </div>
+                                <div class="sct-btn" data-img="image/sc-2.png">
+                                    <h3>Traders</h3>
+                                </div>
+                                <div class="sct-btn" data-img="image/sc-3.png">
+                                    <h3>Manufacturers</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-7 col-md-6 col-lg-5">
+                            <div class="sct-right"><img src="image/sc-1.png" alt="" class="w-100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- SELLING CHANNELS Section End -->
 
 
@@ -429,6 +455,12 @@
 
     <!-- ========== main Js ========== -->
     <script src="js/main.js"></script>
+    <script>
+         $('.sct-btn').mouseover(function(){
+        var imgSrc = $(this).data('img'); // Get the value of data-img attribute
+        $('.sct-right > img').attr('src', imgSrc); // Set the src attribute of the image
+    });
+    </script>
 </body>
 
 </html>
