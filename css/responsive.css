@@ -131,6 +131,9 @@
     .ctb-h h1 {
         font-size: calc(var(--th-fs-1));
       }
+      .op-box {
+        padding: 12px;
+    }
 
 }
 
