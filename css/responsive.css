@@ -128,7 +128,9 @@
         border-radius: 0px;
     }
 
-   
+    .ctb-h h1 {
+        font-size: calc(var(--th-fs-1));
+      }
 
 }
 
