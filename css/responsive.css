@@ -1,13 +1,26 @@
 /* Extra large devices (1200px and down) */
 
 @media screen and (max-width: 1200px) {
+    .au-bottom-img {
+        top: -155px;
+    }
+
     .enviromental-box .row {
         padding: 30px !important;
-      }
-      .enviromental-box .row .col-md-4:nth-child(2) .eb-box {
+    }
+
+    .enviromental-box .row .col-md-4:nth-child(2) .eb-box {
         border-left: 0px solid var(--th-c-1);
         border-right: 0px solid var(--th-c-1);
-      }
+    }
+
+    .m-text {
+        padding: 20px;
+    }
+
+    .m-text {
+        padding: 30px;
+    }
 }
 
 
@@ -20,11 +33,19 @@
         --th-fs-2: calc(24px*0.9);
         --th-fs-3: calc(18px);
     }
-    
-.eb-box {
-    padding: 10px;
-  }
-  
+
+    .eb-box {
+        padding: 10px;
+    }
+
+    .au-bottom-img {
+        top: 0px;
+    }
+
+    .we-do {
+        padding: 80px 0px;
+    }
+
 }
 
 
@@ -37,17 +58,115 @@
         --th-fs-2: calc(24px*0.8);
         --th-fs-3: calc(18px*0.9);
     }
+
+    .hh-box {
+        height: 700px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .th-btn {
+        padding: 8px 24px;
+    }
+
+    .enviromental {
+        padding: 50px 0px;
+    }
+
+    .wd-text p {
+        margin: 20px 0px;
+    }
+
     h1 {
         letter-spacing: 4px;
     }
+
     .enviromental-box {
-        transform: translate(0,0%);
-      }
+        transform: translate(0, 0%);
+    }
+
+    .ct-box {
+        padding: 40px 0px;
+    }
+
+    .contribut-to {
+        padding: 50px 0px;
+    }
+
+    .foot-sec-1 h2 {
+        margin-bottom: 20px;
+    }
+
+    .foot-sec {
+        max-width: 100%;
+    }
+
+    .footer,
+    .scrap-from,
+    .places,
+    .unique-selling {
+        padding: 50px 0;
+    }
+
+    .wwu-box {
+        max-width: 90%;
+    }
+
+    .wwu-right {
+        height: 300px;
+    }
+
+    .p-point {
+        display: flex;
+        gap: 52px;
+        margin-top: 70px;
+    }
+
+    .e-box:hover {
+        background-color: #faedce;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+   
+
 }
 
 
 /* Small devices (576px and down) */
 
 @media screen and (max-width: 576px) {
+    .hh-box {
+        height: 600px;
+    }
 
+    .hhb {
+        top: 55%;
+    }
+
+    .social-icon {
+        margin-top: 0px;
+    }
+
+    .wwu-box {
+        max-width: 100%;
+    }
+
+    .p-point {
+        display: flex;
+        gap: 52px;
+        margin-top: 40px;
+    }
+    .sct-btn {
+        padding: 20px;
+        cursor: pointer;
+    }
+    .sct-btn h3{
+        margin: 0;
+    }
+    .sct-right img{
+        width: 100%;
+        min-width: 100%;
+        margin-top: 20px;
+      }
 }

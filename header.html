@@ -35,4 +35,12 @@
     $("#menu-close").click(function () {
         $("#mobile-menu").removeClass("active");
     })
+    $(window).scroll(function(){
+        let st = $(window).scrollTop();
+        if(st>70){
+            $("#header").addClass('active');
+        } else{
+            $("#header").removeClass('active');
+        }
+    })
 </script>
