@@ -459,12 +459,12 @@ Scroll Bar style start
   top: 50%;
   z-index: 2;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   padding: 0;
   margin: 0;
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 80px;
+  max-height: 80px;
   transform: rotate(90deg) translateX(-50%);
 }
 .carousel-indicators [data-bs-target] {
@@ -989,7 +989,7 @@ background-color: var(--th-c-2);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  transition: all 0.5s;
+  transition: all 0.5s !important;
 }
 
 .e-box:hover {
