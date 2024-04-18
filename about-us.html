@@ -49,7 +49,19 @@
     <main>
 
         <!-- About Hero Section Start -->
-        <section class="about-hero"><img src="image/about-hero.png" alt="" class="w-100"></section>
+        <section class="about-hero">
+        <div class="containter-xxl">
+            <div class="row justify-content-center">
+                <div class="col-11 col-lg-6 col-md-8">
+                    <div class="ah-text text-center">
+                        <h1>ABOUT US</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deleniti necessitatibus aspernatur quasi, cumque perferendis dignissimos, cum et ut possimus quae, recusandae voluptate nisi officiis aut non esse dolorem aperiam iure perspiciatis magnam. Ipsa dolorum eum repellendus laboriosam aliquid ratione doloribus delectus adipisci illo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ah-img"><img src="image/about-hero.png" alt=""></div>
+        </section>
         <!-- About Hero Section End -->
 
         <!-- Management Section Start -->
@@ -461,6 +473,14 @@
         var imgSrc = $(this).data('img'); // Get the value of data-img attribute
         $('.sct-right > img').attr('src', imgSrc); // Set the src attribute of the image
     });
+    $(window).scroll(function(){
+        let st = $(window).scrollTop();
+        if(st>0){
+            $(".ah-img").addClass("active");
+        } else{
+            $(".ah-img").removeClass("active");
+        }
+    })
     </script>
 </body>
 

@@ -142,6 +142,7 @@ Scroll Bar style start
 
 /* Scroll Bar style Section End */
 
+#about-page main,
 #product-page main,
 #contact-page main,
 #product-sub-page main {
@@ -477,7 +478,7 @@ border: solid 2px var(--th-c-5);
 }
 .au-bottom-img {
   position: relative;
-  top: -200px;
+  top: -270px;
 }
 .au-bottom-img img{
   width: 100%;
@@ -508,6 +509,7 @@ border: solid 2px var(--th-c-5);
   flex-direction: column;
   justify-content: center;
   opacity: 0;
+  visibility: hidden;
   transition: all 0.4s;
   padding: 20px;
 }
@@ -555,6 +557,7 @@ border: solid 2px var(--th-c-5);
 
 .wd-box:hover .wd-text {
   opacity: 1;
+  visibility: visible;
 }
 
 /* ------------- We Do Section End ------------- */
@@ -787,8 +790,36 @@ border: solid 2px var(--th-c-5);
 /* ------------- Footer Section End ------------- */
 
 /* About Us Page =============================================---------------- */
+/* 11. About Hero Section Start ------------------------------ */
+.about-hero{
+  padding: 300px 0px 500px 0px;
+  position: relative;
+  overflow: hidden;
+}
+.about-hero .ah-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all .5s;
+}
+.about-hero .ah-img.active{
+top: 650px;
+}
+
+.about-hero .ah-img img{
+  width: 100%;
+  min-width: 1200px;
+}
+.about-hero h1{
+  font-size: calc(var(--th-fs-1)*2);
+  color: var(--th-c-2);
+}
+/* ------------- About Hero Section End ------------- */
+
 
 /* 11. Managament Section Start ------------------------------ */
+
 .management {
   padding: 80px 0px;
 }

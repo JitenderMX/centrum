@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     // Set the recipient email address
-    $to = "info@mrwapl.com";
+    $to = "jitender.work.mediax@gmail.com";
     
     // Set the email subject
     $subject = "New Form Submission";
