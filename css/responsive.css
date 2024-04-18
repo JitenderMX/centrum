@@ -130,8 +130,9 @@
 
     .ctb-h h1 {
         font-size: calc(var(--th-fs-1));
-      }
-      .op-box {
+    }
+
+    .op-box {
         padding: 12px;
     }
 
@@ -162,16 +163,36 @@
         gap: 52px;
         margin-top: 40px;
     }
+
     .sct-btn {
         padding: 20px;
         cursor: pointer;
     }
-    .sct-btn h3{
+
+    .sct-btn h3 {
         margin: 0;
     }
-    .sct-right img{
+
+    .sct-right img {
         width: 100%;
         min-width: 100%;
         margin-top: 20px;
-      }
+    }
+
+    .carousel-indicators {
+        left: 50%;
+        top: 77%;
+        max-width: 100%;
+        max-height: auto;
+        transform: rotate(0deg) translate(-50%, 50%);
+    }
+
+    /* .carousel-indicators [data-bs-target] {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        margin-right: 3px;
+        margin-left: 3px;
+        cursor: pointer;
+    } */
 }

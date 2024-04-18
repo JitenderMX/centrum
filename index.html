@@ -33,9 +33,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- Link Swiper's CSS -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
-
 </head>
 
 <body id="home-page">
@@ -50,14 +47,59 @@
 
         <!-- Hero Banner Section Start -->
         <div class="hero hero-home">
-            <div class="hh-box">
-                <video src="image/banner-1.mp4" autoplay muted loop></video>
-                <div class="hhb">
-                    <div class="container-xxl">
-                        <div class="hhb-text">
-                            <h1>Your Gateway between Europe & India</h1>
-                            <p class="mb-4">Importer & Exporter of various commodities between Europe & Asia</p>
-                            <a href="contact-us.html" class="th-btn th-btn-2">contact us</a>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="hh-box">
+                            <video src="image/banner-1.mp4" autoplay muted loop></video>
+                            <div class="hhb">
+                                <div class="container-xxl">
+                                    <div class="hhb-text">
+                                        <h1>Your Gateway between Europe & India</h1>
+                                        <p class="mb-4">Importer & Exporter of various commodities between Europe & Asia
+                                        </p>
+                                        <a href="contact-us.html" class="th-btn th-btn-2">contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hh-box">
+                            <video src="image/banner-1.mp4" autoplay muted loop></video>
+                            <div class="hhb">
+                                <div class="container-xxl">
+                                    <div class="hhb-text">
+                                        <h1>Your Gateway between Europe & India</h1>
+                                        <p class="mb-4">Importer & Exporter of various commodities between Europe & Asia
+                                        </p>
+                                        <a href="contact-us.html" class="th-btn th-btn-2">contact us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hh-box">
+                            <video src="image/banner-1.mp4" autoplay muted loop></video>
+                            <div class="hhb">
+                                <div class="container-xxl">
+                                    <div class="hhb-text">
+                                        <h1>Your Gateway between Europe & India</h1>
+                                        <p class="mb-4">Importer & Exporter of various commodities between Europe & Asia
+                                        </p>
+                                        <a href="contact-us.html" class="th-btn th-btn-2">contact us</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,7 +163,8 @@
                                 </p>
                                 <a href="about-us.html" class="th-btn th-btn-2">know more</a>
                             </div>
-                            <div class="col-4 d-none d-lg-block"><img src="image/about-cra.png" class="w-100" alt=""></div>
+                            <div class="col-4 d-none d-lg-block"><img src="image/about-cra.png" class="w-100" alt="">
+                            </div>
                         </div>
                     </div>
                     <div class="col-12">
@@ -452,32 +495,10 @@
     <!-- Slick Slider JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
+
     <!-- ========== main Js ========== -->
     <script src="js/main.js"></script>
-
     <script>
-        /*   $(document).ready(function () {
-              $(".eb-tab .ebt-body").slideUp()
-              $(".eb-tab").eq(0).find(".ebt-body").slideDown()
-              $('.ebt-h').click(function () {
-                  $(".eb-tab").find('.fal').removeClass('fa-minus-square').addClass('fa-plus-square');
-                  $(".eb-tab .ebt-body").slideUp()
-                  $(".eb-tab").removeClass("active");
-                  $(this).parent().addClass("active");
-                  $(this).next().slideDown();
-  
-                  
-                  // Find .fal elements
-                  var falIcon = $(this).find('.fal');
-  
-                  // Toggle class attribute
-                  if (falIcon.hasClass('fa-minus-square')) {
-                      falIcon.removeClass('fa-minus-square').addClass('fa-plus-square');
-                  } else {
-                      falIcon.removeClass('fa-plus-square').addClass('fa-minus-square');
-                  }
-              });
-          }); */
         $(document).ready(function () {
             $(".eb-tab .ebt-body").slideUp();
             $(".eb-tab").eq(0).find(".ebt-body").slideDown();
@@ -532,7 +553,7 @@
                 $('.eb-slider').slick('slickNext'); // Go to next slide
                 updateNumber(1); // Update the number
             });
-            
+
             /* $('.ebs-bo .far').click(function () {
                 $('.eb-slider').slick('slickNext'); // Go to next slide
                 updateNumber(1); // Update the number
