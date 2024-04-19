@@ -183,10 +183,6 @@ Scroll Bar style start
   margin-right: 20px;
 }
 
-.header li {
-  margin-right: 20px;
-}
-
 .header a {
   color: var(--th-c-5);
   letter-spacing: 1px;

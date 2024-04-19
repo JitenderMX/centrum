@@ -35,11 +35,11 @@
     $("#menu-close").click(function () {
         $("#mobile-menu").removeClass("active");
     })
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         let st = $(window).scrollTop();
-        if(st>70){
+        if (st > 70) {
             $("#header").addClass('active');
-        } else{
+        } else {
             $("#header").removeClass('active');
         }
     })
