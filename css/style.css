@@ -23,8 +23,11 @@ body {
     color: #222;
     font-size: 1.6rem;
 } */
+body {
+ top: 0px !important;
+}
 * {
-  user-select: none;
+  /* user-select: none; */
 }
 
 h1,
@@ -158,7 +161,7 @@ Scroll Bar style start
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1000;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(25px);
   transition: all .5s;
@@ -401,6 +404,43 @@ Scroll Bar style start
   width: 100%;
 }
 
+.goog-te-gadget-icon {
+  display: none;
+}
+
+
+.goog-te-gadget-simple {
+  color: var(--th-c-1) !important;
+  background-color: var(--th-c-2) !important;
+  border: 0 !important;
+  font-size: 10pt;
+  font-weight: 800;
+  display: inline-block;
+  padding: 10px 10px !important;
+  cursor: pointer;
+  zoom: 1;
+}
+
+
+#google_translate_element {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 99999;
+}
+.goog-te-gadget-simple span {
+  color: var(--th-c-1) !important;
+}
+.skiptranslate>iframe{
+  display: none;
+}
+/* .VIpgJd-ZVi9od-vH1Gmf {
+  background-color: var(--th-c-1) !important;
+  text-decoration: none;
+  border: 1px solid var(--th-c-1);
+  overflow: hidden;
+  padding: 4px;
+} */
 
 /* -------------  Section Section  End ------------- */
 
@@ -463,6 +503,7 @@ Scroll Bar style start
   max-height: 80px;
   transform: rotate(90deg) translateX(-50%);
 }
+
 .carousel-indicators [data-bs-target] {
   width: 15px;
   height: 15px;
@@ -472,9 +513,11 @@ Scroll Bar style start
   cursor: pointer;
   opacity: 1;
 }
+
 .carousel-indicators .active {
-background-color: var(--th-c-2);
+  background-color: var(--th-c-2);
 }
+
 /* ------------- Hero Banner Section End ------------- */
 
 /* 04. Enviromental Section Start ------------------------------ */
