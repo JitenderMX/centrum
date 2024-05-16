@@ -25,6 +25,7 @@ body {
 } */
 body {
   top: 0px !important;
+  overflow-x: hidden;
 }
 
 /* * {
