@@ -198,17 +198,28 @@
     .carousel-indicators {
         margin-top: 25px;
     }
-    .container-xxl{
+
+    .container-xxl {
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
+
+    .header {
+        padding: 15px 0px;
+    }
+    .about-hero .ah-img.active {
+        top: 570px;
+    }
+
     .enviromental-box .row {
         padding: 20px !important;
     }
-    .wd-img img{
+
+    .wd-img img {
         height: 200px;
         object-fit: cover;
     }
+
     .wd-text {
         position: relative;
         opacity: 1;
@@ -223,6 +234,7 @@
     .wd-text::before {
         transform: scale(1);
     }
+
     .wwu-right {
         height: auto;
     }
