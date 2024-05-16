@@ -24,10 +24,17 @@ body {
     font-size: 1.6rem;
 } */
 body {
- top: 0px !important;
+  top: 0px !important;
 }
-* {
-  /* user-select: none; */
+
+/* * {
+  user-select: none;
+} */
+
+.container-xxl {
+  max-width: 1600px !important;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
 }
 
 h1,
@@ -428,12 +435,15 @@ Scroll Bar style start
   right: 16px;
   z-index: 99999;
 }
+
 .goog-te-gadget-simple span {
   color: var(--th-c-1) !important;
 }
-.skiptranslate>iframe{
+
+.skiptranslate>iframe {
   display: none;
 }
+
 /* .VIpgJd-ZVi9od-vH1Gmf {
   background-color: var(--th-c-1) !important;
   text-decoration: none;
@@ -590,7 +600,7 @@ Scroll Bar style start
   justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.4s;
+  transition: all .8s;
   padding: 20px;
 }
 
@@ -628,7 +638,7 @@ Scroll Bar style start
   z-index: 1;
   top: 0;
   left: 0;
-  transition: all 0.2s;
+  transition: all 0.4s;
 }
 
 .wd-box:hover .wd-text::before {
@@ -914,13 +924,15 @@ Scroll Bar style start
 }
 
 .m-text {
+  /* 
   position: absolute;
   bottom: 0;
-  left: 0;
-  padding: 30px;
+  left: 0; 
   background: rgba(255, 253, 246, 0.58);
   backdrop-filter: blur(15px);
   transform: translateY(100%);
+  */
+  padding: 10px 0px;
   transition: all 0.5s;
 }
 
@@ -931,17 +943,20 @@ Scroll Bar style start
 .m-text h2 {
   color: var(--th-c-1);
   font-size: var(--th-fs-4);
-  letter-spacing: 3.2px;
+  font-weight: 800;
+  line-height: 160%;
+  text-transform: none;
+  margin-bottom: 0;
+  /* 57.6px */
 }
 
 .m-text span {
   color: var(--th-c-1);
   font-size: var(--th-fs-3);
-  letter-spacing: 3.2px;
   font-family: var(--th-font-2);
-  font-style: italic;
+  /* font-style: italic; */
   font-weight: 400;
-  line-height: 150%;
+  line-height: 120%;
   /* 27px */
 }
 
@@ -952,6 +967,56 @@ Scroll Bar style start
 }
 
 /* ------------- Managament Section End ------------- */
+/* 1. History Section Start ------------------------------ */
+.history {
+  padding: 80px 0px;
+  margin-bottom: 80px;
+  background-color: var(--th-c-1);
+}
+
+.history h1 {
+  color: var(--th-c-3);
+}
+.hi-box{
+  padding: 30px 0px !important;
+}
+.his-tab{
+  cursor: pointer;
+}
+.hib-left h1 {
+  color: #417576;
+  font-size: calc(var(--th-fs-1)*5);
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.hib-right p {
+  color: var(--th-c-5);
+}
+.his-line{
+  width: 100%;
+  height: 11px;
+  background: #123637;
+  transition: all .5s;
+}
+.his-tab.active .his-line{
+  background-color: var(--th-c-2);
+}
+.his-tab h6{
+  color: var(--th-c-5);
+  font-family: var(--th-font-1);
+  font-size: var(--th-fs-3);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ------------- History Section End ------------- */
+
 
 /* 12. Business Section Start ------------------------------ */
 .b-box {
