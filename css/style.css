@@ -1113,6 +1113,9 @@ Scroll Bar style start
   font-weight: 700;
   line-height: 160%;
 }
+.e-text p{
+  margin-bottom: 0;
+}
 
 /* ------------- How Scrap is Economical Section End ------------- */
 

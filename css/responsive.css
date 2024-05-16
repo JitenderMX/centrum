@@ -15,12 +15,10 @@
     }
 
     .m-text {
-        padding: 20px;
+        padding: 20px 0px;
+        margin-bottom: 10px;
     }
 
-    .m-text {
-        padding: 30px;
-    }
 }
 
 
@@ -195,6 +193,12 @@
         margin-left: 3px;
         cursor: pointer;
     } */
+    .about-hero h1 {
+        font-size: calc(var(--th-fs-1)*1.5);
+    }
+    .hib-left h1{
+        font-size: calc(var(--th-fs-1)*4);
+    }
     .carousel-indicators {
         margin-top: 25px;
     }
@@ -207,9 +211,9 @@
     .header {
         padding: 15px 0px;
     }
-    .about-hero .ah-img.active {
+    /* .about-hero .ah-img.active {
         top: 570px;
-    }
+    } */
 
     .enviromental-box .row {
         padding: 20px !important;
