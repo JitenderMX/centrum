@@ -14,10 +14,6 @@
         border-right: 0px solid var(--th-c-1);
     }
 
-    .m-text {
-        padding: 20px 0px;
-        margin-bottom: 10px;
-    }
 
 }
 
@@ -241,5 +237,9 @@
 
     .wwu-right {
         height: auto;
+    }
+    .m-text{
+        padding: 0px;
+        margin-top: 20px;
     }
 }

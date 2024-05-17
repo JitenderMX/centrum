@@ -922,8 +922,13 @@ Scroll Bar style start
 .m-box {
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
 }
-
+.m-img{
+  flex: 1 1 200px;
+}
 .m-text {
   /* 
   position: absolute;
@@ -933,7 +938,8 @@ Scroll Bar style start
   backdrop-filter: blur(15px);
   transform: translateY(100%);
   */
-  padding: 10px 0px;
+  flex-grow: 2;
+  padding: 20px 20px 0px 20px;
   transition: all 0.5s;
 }
 
@@ -945,7 +951,7 @@ Scroll Bar style start
   color: var(--th-c-1);
   font-size: var(--th-fs-4);
   font-weight: 800;
-  line-height: 160%;
+  line-height: 130%;
   text-transform: none;
   margin-bottom: 0;
   /* 57.6px */
@@ -1039,11 +1045,15 @@ Scroll Bar style start
 /* 13. Scrap Form Section Start ------------------------------ */
 .scrap-from {
   padding: 80px 0px;
+  padding-bottom:0px ;
 }
 
-.sf-img,
-.sf-text {
-  margin: 20px 0px;
+.sf-img{
+  height: 100%;
+}
+.sf-img img{
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ------------- Scrap Form Section End ------------- */
@@ -1241,6 +1251,18 @@ Scroll Bar style start
   background: #006466;
   padding: 30px;
   margin-bottom: 30px;
+}
+.op-box thead tr th{
+background-color: rgba(4, 118, 121, 1) !important;
+color: var(--th-c-3);
+}
+.op-box tbody tr:nth-child(even) td{
+background-color: rgba(4, 118, 121, 1) !important;
+color: var(--th-c-3);
+}
+.op-box tbody tr:nth-child(odd) td{
+background-color: rgba(6, 88, 90, 1) !important;
+color: var(--th-c-3);
 }
 
 .op-box h2 {
