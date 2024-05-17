@@ -29,6 +29,7 @@ body {
 }
 section{
   overflow-x: hidden !important;
+  overflow-y: visible !important;
 }
 /* * {
   user-select: none;
