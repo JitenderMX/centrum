@@ -25,11 +25,11 @@ body {
 } */
 body {
   top: 0px !important;
-  overflow-x: hidden !important;
+  /* overflow-x: hidden !important; */
 }
 section{
-  overflow-x: hidden !important;
-  overflow-y: visible !important;
+  overflow: hidden !important;
+  /* overflow-y: visible !important; */
 }
 /* * {
   user-select: none;
@@ -535,7 +535,9 @@ Scroll Bar style start
 /* ------------- Hero Banner Section End ------------- */
 
 /* 04. Enviromental Section Start ------------------------------ */
-
+.enviromental{
+  overflow: visible !important;
+}
 .enviromental-box {
   background: rgba(255, 253, 246);
   box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.1);
