@@ -193,6 +193,7 @@ Scroll Bar style start
 .header a {
   color: var(--th-c-5);
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 #about-page .header a,
