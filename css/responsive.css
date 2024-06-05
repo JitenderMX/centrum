@@ -39,7 +39,10 @@
     .we-do {
         padding: 80px 0px;
     }
-
+    .nav-logo a img{
+        width: 100%;
+        right: 0px;
+      }
 }
 
 
@@ -52,7 +55,7 @@
         --th-fs-2: calc(24px*0.8);
         --th-fs-3: calc(18px*0.9);
     }
-
+   
     .hh-box {
         height: 700px;
         position: relative;

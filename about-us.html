@@ -196,37 +196,37 @@
                         <div class="col-2 px-1 px-md-3">
                             <div id="hi-box-1" class="his-tab active">
                                 <div class="his-line"></div>
-                            <h6>2019</h6>
+                                <h6>2019</h6>
                             </div>
                         </div>
                         <div class="col-2 px-1 px-md-3">
                             <div id="hi-box-2" class="his-tab">
                                 <div class="his-line"></div>
-                            <h6>2020</h6>
+                                <h6>2020</h6>
                             </div>
                         </div>
                         <div class="col-2 px-1 px-md-3">
                             <div id="hi-box-3" class="his-tab">
                                 <div class="his-line"></div>
-                            <h6>2021</h6>
+                                <h6>2021</h6>
                             </div>
                         </div>
                         <div class="col-2 px-1 px-md-3">
                             <div id="hi-box-4" class="his-tab">
                                 <div class="his-line"></div>
-                            <h6>2022</h6>
+                                <h6>2022</h6>
                             </div>
                         </div>
                         <div class="col-2 px-1 px-md-3">
                             <div id="hi-box-5" class="his-tab">
                                 <div class="his-line"></div>
-                            <h6>2023</h6>
+                                <h6>2023</h6>
                             </div>
                         </div>
                         <div class="col-2 px-1 px-md-3">
                             <div id="hi-box-6" class="his-tab">
                                 <div class="his-line"></div>
-                            <h6>2024</h6>
+                                <h6>2024</h6>
                             </div>
                         </div>
                     </div>
@@ -313,15 +313,18 @@
                             <div class="">
                                 <h1 class="text-uppercase">we get our Scrap from</h1>
                             </div>
-                           <div class="">
                             <div class="">
-                                <p>Our Ferrous scrap, essential to our operations, is carefully sourced from trusted suppliers across Europe. </p>
-                                <p>With partners in Germany, Netherlands, Italy, Poland, the UK, Denmark, and Bulgaria, we prioritize quality and reliability. This dedication is fundamental to our business, ensuring customer satisfaction.</p>
+                                <div class="">
+                                    <p>Our Ferrous scrap, essential to our operations, is carefully sourced from trusted
+                                        suppliers across Europe. </p>
+                                    <p>With partners in Germany, Netherlands, Italy, Poland, the UK, Denmark, and
+                                        Bulgaria, we prioritize quality and reliability. This dedication is fundamental
+                                        to our business, ensuring customer satisfaction.</p>
+                                </div>
+                                <div class="">
+                                    <a href="contact-us.html" class="th-btn th-btn-2">CONTACT US</a>
+                                </div>
                             </div>
-                            <div class="">
-                                 <a href="contact-us.html" class="th-btn th-btn-2">CONTACT US</a>
-                            </div>
-                           </div>
                         </div>
                     </div>
                 </div>
@@ -506,7 +509,8 @@
                                 <div class="usc-icon"><img src="image/usc-i-1.png" alt=""></div>
                                 <div class="usc-text">
                                     <h2>Integrity</h2>
-                                    <p>We prioritize honesty and transparency in all our dealings, ensuring trust and reliability for our partners.</p>
+                                    <p>We prioritize honesty and transparency in all our dealings, ensuring trust and
+                                        reliability for our partners.</p>
                                 </div>
                             </div>
                         </div>
@@ -516,7 +520,8 @@
                                 <div class="usc-icon"><img src="image/usc-i-2.png" alt=""></div>
                                 <div class="usc-text">
                                     <h2>Commitment</h2>
-                                    <p>Our unwavering dedication to quality and service excellence drives every aspect of our business operations.
+                                    <p>Our unwavering dedication to quality and service excellence drives every aspect
+                                        of our business operations.
                                     </p>
                                 </div>
                             </div>
@@ -527,7 +532,8 @@
                                 <div class="usc-icon"><img src="image/usc-i-3.png" alt=""></div>
                                 <div class="usc-text">
                                     <h2>Agility</h2>
-                                    <p>We swiftly adapt to market changes and customer needs, providing flexible and efficient solutions.
+                                    <p>We swiftly adapt to market changes and customer needs, providing flexible and
+                                        efficient solutions.
                                     </p>
                                 </div>
                             </div>
@@ -538,7 +544,8 @@
                                 <div class="usc-icon"><img src="image/usc-i-4.png" alt=""></div>
                                 <div class="usc-text">
                                     <h2>Responsibility</h2>
-                                    <p>We are dedicated to ethical practices and sustainable solutions, prioritizing environmental and social responsibility.
+                                    <p>We are dedicated to ethical practices and sustainable solutions, prioritizing
+                                        environmental and social responsibility.
                                     </p>
                                 </div>
                             </div>
@@ -549,7 +556,8 @@
                                 <div class="usc-icon"><img src="image/usc-i-5.png" alt=""></div>
                                 <div class="usc-text">
                                     <h2>Excellence</h2>
-                                    <p>Our pursuit of superior quality and outstanding performance sets us apart in the scrap trading industry.</p>
+                                    <p>Our pursuit of superior quality and outstanding performance sets us apart in the
+                                        scrap trading industry.</p>
                                 </div>
                             </div>
                         </div>
@@ -559,7 +567,8 @@
                                 <div class="usc-icon"><img src="image/usc-i-6.png" alt=""></div>
                                 <div class="usc-text">
                                     <h2>Seamlessness</h2>
-                                    <p>We ensure a smooth and efficient trading process, from sourcing to delivery, for optimal customer satisfaction.
+                                    <p>We ensure a smooth and efficient trading process, from sourcing to delivery, for
+                                        optimal customer satisfaction.
                                     </p>
                                 </div>
                             </div>
@@ -631,10 +640,10 @@
     <!-- ========== main Js ========== -->
     <script src="js/main.js"></script>
     <script>
-        
-        $('.his-tab').click(function(){
-            $('.his-tab').removeClass('active');    
-            $(this).addClass('active');    
+
+        $('.his-tab').click(function () {
+            $('.his-tab').removeClass('active');
+            $(this).addClass('active');
             let id = $(this).attr('id');
             $('.hi-box').addClass('d-none');
             $(`[data-hist="${id}"]`).removeClass('d-none');
@@ -647,10 +656,15 @@
             let st = $(window).scrollTop();
             if (st > 0) {
                 $(".ah-img").addClass("active");
+                $('.nav-logo img').attr('src', 'image/logo-light.png');
             } else {
                 $(".ah-img").removeClass("active");
+                $('.nav-logo img').attr('src', 'image/logo-dark.png');
             }
         })
+        $(window).on('load', function () {
+            $('.nav-logo img').attr('src', 'image/logo-dark.png');
+        });
     </script>
 </body>
 

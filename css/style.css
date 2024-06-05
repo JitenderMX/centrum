@@ -189,6 +189,9 @@ Scroll Bar style start
 .header li {
   margin-right: 20px;
 }
+.header li:nth-child(3){
+  margin: 0px;
+}
 
 .header a {
   color: var(--th-c-5);
@@ -240,13 +243,20 @@ Scroll Bar style start
 .header menu a:hover:after {
   width: 100%;
 }
-
+.nav-logo{
+  max-width: 150px;
+}
 .nav-logo a {
   font-size: var(--th-fs-2);
   font-weight: 700;
   letter-spacing: 5.28px;
 }
-
+.nav-logo a img{
+  width: 150px;
+  position: relative;
+  right: 50px;
+  transition: all .5s;
+}
 .nav-menu-btn .fal {
   font-size: var(--th-fs-2);
   border: 1px solid var(--th-c-5);
