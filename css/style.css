@@ -1315,5 +1315,12 @@ color: var(--th-c-3);
 .gallery .br-box a:hover {
   text-decoration: underline;
 }
-
+.details-pera{
+  background-color: #FFF8E8;
+  padding: 40px 0px;
+  margin: 30px 0px;
+}
+.gallery-img{
+  margin-top: 80px;
+}
 /* ------------- Gallery Section End ------------- */

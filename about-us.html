@@ -656,15 +656,11 @@
             let st = $(window).scrollTop();
             if (st > 0) {
                 $(".ah-img").addClass("active");
-                $('.nav-logo img').attr('src', 'image/logo-light.png');
             } else {
                 $(".ah-img").removeClass("active");
-                $('.nav-logo img').attr('src', 'image/logo-dark.png');
             }
         })
-        $(window).on('load', function () {
-            $('.nav-logo img').attr('src', 'image/logo-dark.png');
-        });
+       
     </script>
 </body>
 
