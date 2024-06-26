@@ -43,6 +43,9 @@
         width: 100%;
         right: 0px;
       }
+      .wd-text p {
+        margin: 30px 0px;
+    }
 }
 
 

@@ -594,9 +594,16 @@ Scroll Bar style start
 /* .we-do h1{
   color: var(--th-c-1) !important;
 } */
-
+.we-do-slider{
+  width: 100%;
+}
 .wd-box {
   position: relative;
+}
+.wd-box .wd-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .wd-text {
