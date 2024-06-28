@@ -15,6 +15,9 @@
   --th-font-2: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   top: 0px !important;
