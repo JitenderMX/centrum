@@ -806,6 +806,14 @@ Scroll Bar style start
   margin-top: 10px;
 }
 
+.ebt-body .more-btn{
+ color: var(--th-c-2);
+ cursor: pointer;
+}
+.ebt-body .yellow{
+ color: var(--th-c-2);
+}
+
 .ebt-body p {
   color: var(--th-c-5);
 }

@@ -18,3 +18,8 @@ $(window).scroll(function () {
         $('#about-page .nav-logo img, #product-sub-page .nav-logo img,  #product-page .nav-logo img').attr('src', 'image/logo-dark.png');
     }
 })
+
+$('.more-btn').click(function(){
+    $(this).parent().find('.span-dot').toggleClass('d-inline').toggleClass('d-none');
+    $(this).parent().find('.span-pera').toggleClass('d-none').toggleClass('d-inline');
+})
