@@ -93,6 +93,7 @@ a {
   display: inline-block;
   letter-spacing: 0.9px;
   text-align: center;
+  cursor: pointer;
   transition: all .5s;
 }
 
@@ -203,17 +204,20 @@ Scroll Bar style start
 }
 
 #about-page .header a,
+#product-page .header a,
 #contact-page .header a,
 #product-sub-page .header a {
   color: var(--th-c-1);
 }
 
 #about-page .header a.th-btn,
+#product-page .header a.th-btn,
 #contact-page .header a.th-btn,
 #product-sub-page .header a.th-btn {
   border: 1px solid var(--th-c-1);
 }
 
+#product-page .header a.th-btn:hover,
 #about-page .header a.th-btn:hover,
 #contact-page .header a.th-btn:hover,
 #product-sub-page .header a.th-btn:hover {
@@ -838,13 +842,23 @@ Scroll Bar style start
 /* ------------- Events and Updates Section End ------------- */
 
 /* 10. Footer Section Start ------------------------------ */
+.whatsapp{
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  border-radius:50%;
+  background-color: var(--th-c-3);
+}
 .footer {
   background-color: #ebefe9;
   padding: 80px 0;
 }
 
 .foot-sec {
-  max-width: 270px;
+  max-width: 100%;
   height: 100%;
 }
 
@@ -1245,21 +1259,20 @@ Scroll Bar style start
 
 /* Product Page =============================================---------------- */
 #product-page {
-  background-color: var(--th-c-1);
+  /* background-color: var(--th-c-1); */
 }
 
 /* 19.Our Product Section Start ------------------------------ */
 .our-product {
-
   padding: 100px 0px;
 }
 
 .our-product h1 {
-  color: var(--th-c-5);
+  /* color: var(--th-c-5); */
 }
 
 .our-product p {
-  color: var(--th-c-5);
+  /* color: var(--th-c-5); */
 }
 
 .our-product .op-img {
@@ -1267,11 +1280,11 @@ Scroll Bar style start
 }
 
 .op-box {
-  background: #006466;
+  background: #ebefe9;
   padding: 30px;
   margin-bottom: 30px;
 }
-.op-box thead tr th{
+/* .op-box thead tr th{
 background-color: rgba(4, 118, 121, 1) !important;
 color: var(--th-c-3);
 }
@@ -1282,17 +1295,17 @@ color: var(--th-c-3);
 .op-box tbody tr:nth-child(odd) td{
 background-color: rgba(6, 88, 90, 1) !important;
 color: var(--th-c-3);
-}
+} */
 
 .op-box h2 {
   text-transform: uppercase;
-  color: var(--th-c-5);
+  color: var(--th-c-1);
   letter-spacing: 3px;
   margin: 0 !important;
 }
 
 .op-box p {
-  color: #FFFDF6;
+  /* color: #FFFDF6; */
   margin: 35px 0px;
 }
 
