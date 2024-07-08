@@ -20,6 +20,7 @@ $(window).scroll(function () {
 })
 
 $('.more-btn').click(function(){
+    $(this).addClass('d-none');
     $(this).parent().find('.span-dot').toggleClass('d-inline').toggleClass('d-none');
     $(this).parent().find('.span-pera').toggleClass('d-none').toggleClass('d-inline');
 })
