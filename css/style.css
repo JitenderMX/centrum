@@ -722,7 +722,7 @@ Scroll Bar style start
 }
 
 .wwu-box {
-  max-width: 80%;
+  max-width: 95%;
   display: flex;
   gap: 20px;
   margin: 20px 0px;
