@@ -38,6 +38,7 @@
 
     .we-do {
         padding: 80px 0px;
+        transform: translateY(0px);
     }
     .nav-logo a img{
         width: 100%;
