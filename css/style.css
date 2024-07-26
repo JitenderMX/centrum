@@ -735,7 +735,7 @@ Scroll Bar style start
 }
 
 .wwu-right {
-  height: 350px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1355,5 +1355,8 @@ color: var(--th-c-3);
 }
 .gallery-img{
   margin-top: 80px;
+}
+.gallery-img h2{
+  line-height: 1.5;
 }
 /* ------------- Gallery Section End ------------- */

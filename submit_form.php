@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
-    $phone = $_POST["number"];
+    $phone = $_POST["phone"];
     $email = $_POST["email"];
     $message = $_POST["message"];
     
@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     
     // Set the recipient email address
-    $to = "jitender.work.mediax@gmail.com";
+    $to = "contact@centrumimpex.com";
     
     // Set the email subject
     $subject = "New Form Submission";
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Send the email
     if (mail($to, $subject, $email_content, $headers)) {
-        header("Location: thankyou.html");
+        header("Location: index.html?success=true");
     } else {
         header("Location: error.html");
     }

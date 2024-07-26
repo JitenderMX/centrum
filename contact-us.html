@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <!-- Website Icon  -->
-    <link rel="Icon" href="image/">
+    <link rel="Icon" href="image/favicon.png">
 
     <!-- bootstrap Css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
@@ -70,16 +70,16 @@
                     <div class="col-md-5">
                         <div class="cfm-left mt-4" data-aos="fade-right" data-aos-duration="500" data-aos-delay="200">
                             <div class="contact-form">
-                                <form action="">
+                                <form action="submit_form.php" method="post">
                                     <h2 class="mb-4 text-center">Let's Connect</h2>
-                                    <div class="mb-3"><input type="text" name="" required placeholder="Name" id="">
+                                    <div class="mb-3"><input type="text" name="name" required placeholder="Name" id="">
                                     </div>
-                                    <div class="mb-3"><input type="number" name="" required placeholder="Telephone"
+                                    <div class="mb-3"><input type="number" name="phone" required placeholder="Telephone"
                                             id="">
                                     </div>
-                                    <div class="mb-3"><input type="email" name="" required placeholder="Email" id="">
+                                    <div class="mb-3"><input type="email" name="email" required placeholder="Email" id="">
                                     </div>
-                                    <div class="mb-3"><textarea name="" required placeholder="Comment" id=""
+                                    <div class="mb-3"><textarea name="message" required placeholder="Comment" id=""
                                             rows="4"></textarea></div>
                                     <div class="w-100 d-flex justify-content-end"><button class="th-btn th-btn-2" type="submit">CONTACT US</button>
                                     </div>

@@ -24,3 +24,10 @@ $('.more-btn').click(function(){
     $(this).parent().find('.span-dot').toggleClass('d-inline').toggleClass('d-none');
     $(this).parent().find('.span-pera').toggleClass('d-none').toggleClass('d-inline');
 })
+
+// Check if form submission was successful
+if (window.location.search.includes('success=true')) {
+    alert('Form submitted successfully!');
+    // Redirect to home page after alert
+    window.location.href = 'index.html';
+  }
